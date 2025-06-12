@@ -115,3 +115,56 @@ class Queues
         }
     }
 };
+
+int main()
+{
+    Queues q;
+    char ch;
+
+    while (true)
+    {
+        try
+        {
+            cout << "Menu" << endl;
+            cout << "1. Implement insert poeration" << endl;
+            cout << "2. Implement delete operation" << endl;
+            cout << "3. Display values" << endl;
+            cout << "4. Exit" << endl;
+            cout << "Enter your choice (1-4): ";
+            cin >> ch;
+            cout << endl;
+
+            switch (ch)
+            {
+            case '1':
+                q.insert();
+                break;
+            }
+
+            case '2':
+            {
+                q.remove();
+                break;
+            }
+
+            case '3':
+            {
+                q.display();
+                break;
+            }
+
+            case '4':
+            {
+                return;
+            }
+            default;
+
+        }
+        catch(const std::exception& e)
+        {
+            std::cerr << e.what() << '\n';
+        }
+        
+    }
+    
+}
