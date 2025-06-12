@@ -134,4 +134,5 @@ int main()
             cin >> ch;
             cout << endl;
 
+            switch (ch)
             
